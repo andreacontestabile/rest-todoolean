@@ -1,0 +1,19 @@
+li.todo-item {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  background-color: #ffe1cc;
+}
+
+li.todo-item:nth-child(even) {
+  background-color: #fcf0ed;
+}
+
+button.delete {
+  color: #d62000;
+  font-size: 20px;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
