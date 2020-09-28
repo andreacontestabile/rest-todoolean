@@ -7,21 +7,30 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Todoolean</title>
 </head>
 <body>
-  <header>
-    <h1>Todo List</h1>
-  </header>
-  <main>
-    <ul id="todo-list">
-    </ul>
-    <input id="text-input" type="text"><button id="add">Aggiungi</button>
-  </main>
+  <div class="wrapper">
+    <div class="container">
+      <header>
+        <h1>Todoolean.</h1>
+      </header>
+      <main>
+        <ul id="todo-list">
+        </ul>
+        <div class="input-area">
+          <input id="text-input" type="text">
+          <button id="add">AGGIUNGI</button>
+        </div>
+      </main>
+    </div>
+  </div>
+
 
   <script id="todo-item-template" type="text/x-handlebars-template">
-    <li id="{{id}}" class="todo-item">{{text}}<div class="item-actions"><input class="edit-input" type="text"><button class="action edit"><i class="fas fa-edit"></i></button><button class="action delete"><i class="fas fa-trash-alt"></i></button></div></li>
+    <li id="{{id}}" class="todo-item">{{text}}<div class="item-actions"><input class="edit-input" type="text"><button class="action edit"><i class="fas fa-edit"></i></button><button class="action delete"><i class="fas fa-times"></i></i></button></div></li>
   </script>
   <script src="js/script.js" charset="utf-8"></script>
 </body>
